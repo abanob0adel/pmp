@@ -6215,6 +6215,10 @@ img.avatars {
   font-size: 22px;
 }
 
+.footer .info__logo img {
+  width: 80px;
+}
+
 .footer .post .main-card {
   margin-top: 20px;
 }
@@ -6417,6 +6421,10 @@ img.avatars {
 
 .navbar.login-nav .navbar-nav .nav-link {
   color: #000000;
+}
+
+.navbar .navbar-brand img {
+  width: 80px;
 }
 
 .navbar.affix {
