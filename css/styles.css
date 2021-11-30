@@ -570,12 +570,13 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 20px !important;
+  font-size:16px !important;
+  padding:7px 12px !important;
 }
 
 .btn-whats i {
   padding-right: 10px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 @media (max-width: 992px) {
@@ -6425,6 +6426,18 @@ img.avatars {
 
 .navbar .navbar-brand img {
   width: 80px;
+}
+.navbar .navbar-brand img.logo{
+  display: none;
+}
+.navbar .navbar-brand img.logo-white{
+  display: block;
+}
+.navbar.affix .navbar-brand img.logo-white{
+  display: none;
+}
+.navbar.affix .navbar-brand img.logo{
+  display: block;
 }
 
 .navbar.affix {
