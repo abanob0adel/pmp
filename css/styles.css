@@ -6427,6 +6427,11 @@ img.avatars {
 .navbar .navbar-brand img {
   width: 80px;
 }
+@media (max-width: 992px){
+  .navbar .navbar-brand img {
+    width: 53px;
+  }
+}
 .navbar .navbar-brand img.logo{
   display: none;
 }
