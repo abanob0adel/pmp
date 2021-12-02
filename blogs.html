@@ -10,9 +10,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="200">
+  <body onload="myFunction()" data-spy="scroll" data-target="#navbar" data-offset="200">
     <nav class="navbar navbar-expand-md fixed-top navbar-inverse" id="navbar" data-offset-top="-1" data-spy="affix">
-      <div class="container"><a class="navbar-brand" href="index.html"><img class="logo-white" src="images/logo-white.png"><img class="logo" src="images/logo.png"></a>
+      <div class="container"><a class="navbar-brand" href="/"><img class="logo-white" src="images/logo-white.png"><img class="logo" src="images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
           <ul class="navbar-nav">
@@ -180,6 +180,31 @@
       <div class="loader"></div>
     </div>
     <div class="whats-btn"><a class="btn btn-primary btn-whats" href="https://api.whatsapp.com/send?phone=15551234567"> <i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></div>
+    <script>
+      function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+      
+      function showPage() {
+        var element = document.getElementById("loader")
+        fade(element);
+        document.getElementById("loader-content").style.display = "block";
+      }
+      </script>
     <script src="js/core.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
