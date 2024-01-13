@@ -8,10 +8,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>Yalla-PMP</title>
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="../images/favicon.png" />
     <!-- Styles-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/rtl.css" rel="stylesheet" />
   </head>
   <body
     onload="myFunction()"
@@ -27,30 +28,39 @@
     >
       <div class="container">
         <a class="navbar-brand" href="index.html"
-          ><img class="logo-white" src="images/logo-white.png" /><img
+          ><img class="logo-white" src="../images/logo-white.png" /><img
             class="logo"
-            src="images/logo.png"
+            src="../images/logo.png"
         /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
           <ul class="navbar-nav">
-          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="courses.html">Courses</a>
+              <a class="nav-link" href="courses.html">الكورسات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="free-resources.html">Free resources</a>
+              <a class="nav-link" href="free-resources.html"
+                >الموارد المجانية</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="blogs.html">Blog</a>
+              <a class="nav-link active" href="blogs.html">المدونة</a>
             </li>
             <li class="nav-item hidden-pc">
-              <a class="nav-link" href="login.html">Log In / Register</a>
+              <a class="nav-link" href="login.html">تسجيل الدخول \ الاشتراك</a>
             </li>
             <li class="nav-item hidden-pc">
               <a class="nav-link cart-icon" href="cart.html"
@@ -74,16 +84,18 @@
                     fill="white"
                   />
                 </svg>
-                <span class="count-cart">1</span> Cart</a
+                <span class="count-cart">1</span> سلة التسوق</a
               >
             </li>
             <li class="nav-item hidden-pc">
-              <a class="nav-link" href="/ar/blogs.html">العربية</a>
+              <a class="nav-link" href="../blogs.html">English</a>
             </li>
           </ul>
         </div>
-        <a class="btn btn-primary mobile-hidden language-change" href="/ar/blogs.html"
-          ><img src="images/EgFlag.svg" alt="Egypt Flag"
+        <a
+          class="btn btn-primary mobile-hidden language-change"
+          href="../blogs.html"
+          ><img src="../images/en-falg.svg" alt="Egypt Flag"
         /></a>
         <a class="btn btn-primary mobile-hidden cart-icon" href="cart.html"
           ><svg
@@ -107,18 +119,19 @@
             />
           </svg>
           <span class="count-cart">1</span></a
-        ><a class="btn btn-primary mobile-hidden" href="login.html"
-          >Log In / Register</a
+        >
+        <a class="btn btn-primary mobile-hidden" href="login.html"
+          >تسجيل الدخول / اشتراك</a
         >
       </div>
     </nav>
-    <div class="bread-crumb" style="background: url(images/breadcrumb.png)">
+    <div class="bread-crumb" style="background: url(../images/breadcrumb.png)">
       <div class="container h-100 d-flex align-items-center">
         <div class="bread-crumb__text mt-5">
-          <div class="bread-crumb__title wow slideInLeft">Blog post</div>
+          <div class="bread-crumb__title wow slideInLeft">المدونة</div>
           <div class="bread-crumb__desc wow slideInLeft" data-wow-delay="0.1s">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+            النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
           </div>
         </div>
       </div>
@@ -128,37 +141,48 @@
         <div class="blog-card d-flex flex-column flex-md-row">
           <div class="blog-card__upper wow slideInLeft">
             <div class="blog-card__img">
-              <img class="img-fluid" src="images/laptop.png" />
+              <img class="img-fluid" src="../images/laptop.png" />
             </div>
             <div class="blog-card__head">
               <div class="user">
-                <div class="user__img"><img src="images/chairman.png" /></div>
+                <div class="user__img">
+                  <img src="../images/chairman.png" />
+                </div>
                 <div class="user__text">
-                  <div class="user__name">Ahmed Kamal</div>
+                  <div class="user__name">احمد كمال</div>
                   <div class="user__date">8 March 2021</div>
                 </div>
               </div>
               <div class="icons">
-                <a class="icons__item"> <img src="images/star.png" /></a
-                ><a class="icons__item"> <img src="images/share.png" /></a>
+                <a class="icons__item"> <img src="../images/star.png" /></a
+                ><a class="icons__item"> <img src="../images/share.png" /></a>
               </div>
             </div>
           </div>
           <div class="blog-card__lower wow slideInRight">
             <h3 class="blog-card__title">
-              Youth’s Role In Social And Cultural Transformation
+              دور الشباب في التحول الاجتماعي والثقافي
             </h3>
             <h4 class="blog-card__subtitle">
-              Generational Cohorts Drive Changes In The Cultural Landscape
+              مجموعات الأجيال تقود التغييرات في المشهد الثقافي
             </h4>
             <p class="blog-card__desc">
-              "But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give you
-              a complete account of the system, and expound the actual teachings
-              of the great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter
+              "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة في
+              إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام، وأشرح
+              التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم العظيم.
+              السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة نفسها، لأنها
+              متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي وراء المتعة
+              بعقلانية يواجهون "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة
+              الخاطئة المتمثلة في إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا
+              كاملاً للنظام، وأشرح التعاليم الفعلية للمستكشف العظيم للحقيقة،
+              وباني العالم العظيم. السعادة الإنسانية.لا أحد يرفض أو يكره أو
+              يتجنب المتعة نفسها، لأنها متعة، ولكن لأن أولئك الذين لا يعرفون
+              كيفية السعي وراء المتعة بعقلانية يواجهون "ولكن يجب أن أشرح لك كيف
+              ولدت كل هذه الفكرة الخاطئة المتمثلة في إدانة اللذة وتمجيد الألم،
+              وسأقدم لك وصفًا كاملاً للنظام، وأشرح التعاليم الفعلية للمستكشف
+              العظيم للحقيقة، وباني العالم العظيم. السعادة الإنسانية.لا أحد يرفض
+              أو يكره أو يتجنب المتعة نفسها، لأنها متعة، ولكن لأن أولئك الذين لا
+              يعرفون كيفية السعي وراء المتعة بعقلانية يواجهون
             </p>
           </div>
         </div>
@@ -166,45 +190,45 @@
     </div>
     <div class="blog-second">
       <div class="container">
-        <div class="owl-carousel" id="owl-slider4">
+        <div class="owl-carousel" id="owl-slider4-ar">
           <div class="item">
             <div class="blog-card blog-card--horizontal">
               <div class="blog-card__upper">
                 <div class="blog-card__img">
-                  <img class="img-fluid" src="images/laptop.png" />
+                  <img class="img-fluid" src="../images/laptop.png" />
                 </div>
                 <div class="blog-card__head">
                   <div class="user">
                     <div class="user__img">
-                      <img src="images/chairman.png" />
+                      <img src="../images/chairman.png" />
                     </div>
                     <div class="user__text">
-                      <div class="user__name">Ahmed Kamal</div>
+                      <div class="user__name">احمد كمال</div>
                       <div class="user__date">8 March 2021</div>
                     </div>
                   </div>
                   <div class="icons">
-                    <a class="icons__item"> <img src="images/star.png" /></a
-                    ><a class="icons__item"> <img src="images/share.png" /></a>
+                    <a class="icons__item"> <img src="../images/star.png" /></a
+                    ><a class="icons__item">
+                      <img src="../images/share.png"
+                    /></a>
                   </div>
                 </div>
               </div>
               <div class="blog-card__lower">
                 <h3 class="blog-card__title">
-                  Youth’s Role In Social And Cultural Transformation
+                  دور الشباب في التحول الاجتماعي والثقافي
                 </h3>
                 <h4 class="blog-card__subtitle">
-                  Generational Cohorts Drive Changes In The Cultural Landscape
+                  مجموعات الأجيال تقود التغييرات في المشهد الثقافي
                 </h4>
                 <p class="blog-card__desc">
-                  "But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and I will give
-                  you a complete account of the system, and expound the actual
-                  teachings of the great explorer of the truth, the
-                  master-builder of human happiness. No one rejects, dislikes,
-                  or avoids pleasure itself, because it is pleasure, but because
-                  those who do not know how to pursue pleasure rationally
-                  encounter
+                  "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة
+                  في إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام،
+                  وأشرح التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم
+                  العظيم. السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة
+                  نفسها، لأنها متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي
+                  وراء المتعة بعقلانية يواجهون
                 </p>
               </div>
             </div>
@@ -213,40 +237,40 @@
             <div class="blog-card blog-card--horizontal">
               <div class="blog-card__upper">
                 <div class="blog-card__img">
-                  <img class="img-fluid" src="images/laptop.png" />
+                  <img class="img-fluid" src="../images/laptop.png" />
                 </div>
                 <div class="blog-card__head">
                   <div class="user">
                     <div class="user__img">
-                      <img src="images/chairman.png" />
+                      <img src="../images/chairman.png" />
                     </div>
                     <div class="user__text">
-                      <div class="user__name">Ahmed Kamal</div>
+                      <div class="user__name">احمد كمال</div>
                       <div class="user__date">8 March 2021</div>
                     </div>
                   </div>
                   <div class="icons">
-                    <a class="icons__item"> <img src="images/star.png" /></a
-                    ><a class="icons__item"> <img src="images/share.png" /></a>
+                    <a class="icons__item"> <img src="../images/star.png" /></a
+                    ><a class="icons__item">
+                      <img src="../images/share.png"
+                    /></a>
                   </div>
                 </div>
               </div>
               <div class="blog-card__lower">
                 <h3 class="blog-card__title">
-                  Youth’s Role In Social And Cultural Transformation
+                  دور الشباب في التحول الاجتماعي والثقافي
                 </h3>
                 <h4 class="blog-card__subtitle">
-                  Generational Cohorts Drive Changes In The Cultural Landscape
+                  مجموعات الأجيال تقود التغييرات في المشهد الثقافي
                 </h4>
                 <p class="blog-card__desc">
-                  "But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and I will give
-                  you a complete account of the system, and expound the actual
-                  teachings of the great explorer of the truth, the
-                  master-builder of human happiness. No one rejects, dislikes,
-                  or avoids pleasure itself, because it is pleasure, but because
-                  those who do not know how to pursue pleasure rationally
-                  encounter
+                  "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة
+                  في إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام،
+                  وأشرح التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم
+                  العظيم. السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة
+                  نفسها، لأنها متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي
+                  وراء المتعة بعقلانية يواجهون
                 </p>
               </div>
             </div>
@@ -259,62 +283,62 @@
         <div class="blog-card blog-card--horizontal blog-card--big">
           <div class="blog-card__upper">
             <div class="blog-card__img wow fadeInUp">
-              <img class="img-fluid" src="images/laptop.png" />
+              <img class="img-fluid" src="../images/laptop.png" />
             </div>
             <div class="blog-card__head wow fadeInUp" data-wow-delay="0.2s">
               <div class="user">
-                <div class="user__img"><img src="images/chairman.png" /></div>
+                <div class="user__img">
+                  <img src="../images/chairman.png" />
+                </div>
                 <div class="user__text">
-                  <div class="user__name">Ahmed Kamal</div>
+                  <div class="user__name">احمد كمال</div>
                   <div class="user__date">8 March 2021</div>
                 </div>
               </div>
               <div class="icons">
-                <a class="icons__item"> <img src="images/star.png" /></a
-                ><a class="icons__item"> <img src="images/share.png" /></a>
+                <a class="icons__item"> <img src="../images/star.png" /></a
+                ><a class="icons__item"> <img src="../images/share.png" /></a>
               </div>
             </div>
           </div>
           <div class="blog-card__lower">
             <h3 class="blog-card__title wow fadeInUp" data-wow-delay="0.3s">
-              Youth’s Role In Social And Cultural Transformation
+              دور الشباب في التحول الاجتماعي والثقافي
             </h3>
             <h4 class="blog-card__subtitle wow fadeInUp" data-wow-delay="0.4s">
-              Generational Cohorts Drive Changes In The Cultural Landscape
+              مجموعات الأجيال تقود التغييرات في المشهد الثقافي
             </h4>
             <p class="blog-card__desc wow fadeInUp" data-wow-delay="0.5s">
-              "But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give you
-              a complete account of the system, and expound the actual teachings
-              of the great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter
+              "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة في
+              إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام، وأشرح
+              التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم العظيم.
+              السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة نفسها، لأنها
+              متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي وراء المتعة
+              بعقلانية يواجهون
             </p>
             <p class="blog-card__desc mt-4 wow fadeInUp" data-wow-delay="0.6s">
-              Mary, which was No. 1 among newborn girls in 1960, is now 124.
-              Deborah, which was No. 2 in 1960, is now 907th. Barbara, then
-              12th, is now 899th. Today, Catherine is the 267th most popular
-              name; Ellen, the 804th. Neither Lisa nor Susan is among the top
-              1,000 most popular girls’ names.
+              ماري، التي كانت رقم 1 بين الفتيات حديثي الولادة في عام 1960، تبلغ
+              الآن 124 عامًا. وديبورا، التي كانت رقم 2 في عام 1960، أصبحت الآن
+              في المرتبة 907. باربرا، التي كانت في المركز الثاني عشر آنذاك،
+              أصبحت الآن في المركز 899. اليوم، كاثرين هي الاسم رقم 267 الأكثر
+              شعبية. إلين، 804. لم تكن ليزا أو سوزان من بين أكثر 1000 اسم فتاة
+              شعبية.
             </p>
             <p class="blog-card__desc mt-4 wow fadeInUp" data-wow-delay="0.7s">
-              "But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give you
-              a complete account of the system, and expound the actual teachings
-              of the great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter
+              "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة في
+              إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام، وأشرح
+              التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم العظيم.
+              السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة نفسها، لأنها
+              متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي وراء المتعة
+              بعقلانية يواجهون
             </p>
             <p class="blog-card__desc mt-4 wow fadeInUp" data-wow-delay="0.8s">
-              "But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give you
-              a complete account of the system, and expound the actual teachings
-              of the great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter
+              "ولكن يجب أن أشرح لك كيف ولدت كل هذه الفكرة الخاطئة المتمثلة في
+              إدانة اللذة وتمجيد الألم، وسأقدم لك وصفًا كاملاً للنظام، وأشرح
+              التعاليم الفعلية للمستكشف العظيم للحقيقة، وباني العالم العظيم.
+              السعادة الإنسانية.لا أحد يرفض أو يكره أو يتجنب المتعة نفسها، لأنها
+              متعة، ولكن لأن أولئك الذين لا يعرفون كيفية السعي وراء المتعة
+              بعقلانية يواجهون
             </p>
           </div>
         </div>
@@ -325,13 +349,13 @@
         <div class="row">
           <div class="col-12 col-md-6 col-xl-6 wow fadeInUp">
             <div class="info">
-              <div class="info__logo"><img src="images/logo-white.png" /></div>
-              <h3 class="info__title">About Mohamed Raslan</h3>
+              <div class="info__logo">
+                <img src="../images/logo-white.png" />
+              </div>
+              <h3 class="info__title">عن محمد رسلان</h3>
               <p class="info__desc" style="font-size: 14px">
-                TQM PMP Trainer, Speaker, Technical Editor, and
-                Translator/Senior Project Engineer/Lecturer at Egyptian
-                Engineers Syndicate/Certified from Project Management Institute
-                (PMI)
+                مدرب TQM PMP، ومتحدث، ومحرر فني، ومترجم/مهندس مشروع كبير/محاضر
+                في شركة المهندسين المصريين
               </p>
             </div>
           </div>
@@ -339,13 +363,13 @@
             class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
             data-wow-delay="0.2s"
           >
-            <h3 class="mb-4 footer__title">links</h3>
+            <h3 class="mb-4 footer__title">روابط</h3>
             <div class="info__links">
               <ul class="col info__list p-0">
-                <li class="list__item"><a href="#">About Us</a></li>
-                <li class="list__item"><a href="#">Courses</a></li>
-                <li class="list__item"><a href="#">Fawazir</a></li>
-                <li class="list__item"><a href="#">blog </a></li>
+                <li class="list__item"><a href="#">من نحن</a></li>
+                <li class="list__item"><a href="#">الدورات</a></li>
+                <li class="list__item"><a href="#">فوازير</a></li>
+                <li class="list__item"><a href="#">المدونة </a></li>
               </ul>
             </div>
           </div>
@@ -353,7 +377,7 @@
             class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
             data-wow-delay="0.2s"
           >
-            <h3 class="mb-4 footer__title">Connect With Us</h3>
+            <h3 class="mb-4 footer__title">تواصل معنا</h3>
             <div class="connect mt-4">
               <p class="connect__item font-14">
                 <i class="fa fa-whatsapp"> </i
@@ -376,15 +400,15 @@
           class="row d-flex justify-content-between align-items-center copyright"
         >
           <p class="copyright__text">
-            Copyright © 2021 All rights reserved | This site is made with by
+            حقوق النشر © 2021 جميع الحقوق محفوظة | ,تم إنشاء هذا الموقع بواسطة
             Code Plus.
           </p>
-          <a class="copyright__text" href="#">Privacy & Policy </a>
+          <a class="copyright__text" href="#">سياسة الخصوصية </a>
         </div>
       </div>
     </footer>
     <div id="loader">
-      <div class="loader"></div>
+      <div id="loader-content" class="loader"></div>
     </div>
     <div class="whats-btn">
       <a
@@ -419,8 +443,15 @@
         document.getElementById("loader-content").style.display = "block";
       }
     </script>
-    <script src="js/core.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="../js/core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"
+      integrity="sha512-QwpsxtdZRih55GaU/Ce2Baqoy2tEv9GltjAG8yuTy2k9lHqK7VHHp3wWWe+yITYKZlsT3AaCj49ZxMYPp46iJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
   </body>
 </html>

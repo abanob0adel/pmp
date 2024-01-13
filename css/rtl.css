@@ -1,0 +1,118 @@
+body {
+  direction: rtl;
+}
+.hero__head,
+.aboutus .about-card,
+.courses__text,
+#about-mohamed div.content,
+#course-banner .content,
+.suggest-courses .course-card__body,
+.clients,
+.testimonials-data,
+input[type="tel"],
+.contact-us .maps h3.contact-title,
+footer div,
+.bread-crumb__text,
+.cart-items tr th,
+.cart-items .course-name,
+td.price,
+.summary .subtotal,
+.summary h6,
+.welcome-text,
+#howto,
+.card-header .btn-link,
+.card-header .card-body,
+.q-counter,
+.quiz-box .question,
+.quiz-head,
+#first-section,
+.single-course .enroll .details-couse,
+.course-present,
+.contact-us .maps .information,
+.how-content .content,
+.content-card,
+.navbar-collapse.collapse li {
+  text-align: right !important;
+}
+.hero .btn-primary {
+  float: right;
+}
+.owl-nav i {
+  transform: rotate(180deg);
+}
+.contact-us .maps .contact-data {
+  flex-direction: row-reverse;
+}
+.contact-us .maps .information .details {
+  justify-content: flex-end;
+}
+.blog-card__lower {
+  margin-right: 42px;
+  text-align: right;
+}
+.blog-card .user__text {
+  margin-right: 17px;
+  text-align: right;
+  direction: ltr;
+  margin-left: 17px;
+}
+.summary .summary-box .price {
+  text-align: left;
+}
+.filters .search-form .form-group:first-child {
+  position: relative;
+}
+.has-search .form-control-feedback {
+  left: 0;
+}
+.videoCenter .swiper-slide.swiper-slide-active {
+  transform: scale(1) !important;
+}
+.videoCenter .swiper-slide {
+  transform: scale(0.8) !important;
+}
+.quiz-box .question.correct::after,
+.quiz-box .question.wrong::after {
+  left: 10px;
+  right: unset;
+}
+.how-content .how-flex .arrow-button {
+  display: none;
+}
+.frequently .card-header h5 button::after {
+  left: 25px;
+  right: unset;
+}
+.welcome .connect {
+  margin-left: 20px;
+}
+.welcome .connect__desc {
+  direction: ltr;
+}
+.single-course .enroll {
+  right: unset;
+  left: 0;
+}
+.contact-form .card-header h5 button::after {
+  right: unset;
+  left: 5px;
+}
+.contact-us .maps .information .details {
+  justify-content: flex-start;
+}
+.frequently .card-body {
+  text-align: right;
+}
+.course-present .flex-learn > div {
+  padding-right: 25px;
+}
+.course-present .flex-learn > div::before {
+  left: unset;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .cart-icon span.count-cart {
+    right: 10px;
+    left: unset;
+  }
+}

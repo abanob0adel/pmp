@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Yalla-PMP</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+  </head>
+  <body
+    onload="myFunction()"
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="200"
+  >
+    <nav
+      class="navbar navbar-expand-md fixed-top navbar-inverse"
+      id="navbar"
+      data-offset-top="-1"
+      data-spy="affix"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo-white" src="images/logo-white.png" /><img
+            class="logo"
+            src="images/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class=" nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="free-resources.html">Free resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blog</a>
+          </li>
+          <li class="nav-item hidden-pc">
+            <a class="nav-link" href="login.html">Log In / Register</a>
+          </li>
+          <li class="nav-item hidden-pc">
+            <a class="nav-link cart-icon" href="cart.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.265 10.0833C22.265 10.3486 22.1596 10.6029 21.9721 10.7904C21.7845 10.978 21.5302 11.0833 21.265 11.0833C20.9998 11.0833 20.7454 10.978 20.5579 10.7904C20.3703 10.6029 20.265 10.3486 20.265 10.0833V8.08333C20.265 7.11087 19.8787 6.17824 19.191 5.49061C18.5034 4.80298 17.5708 4.41667 16.5983 4.41667C15.6258 4.41667 14.6932 4.80298 14.0056 5.49061C13.3179 6.17824 12.9316 7.11087 12.9316 8.08333V10.0833C12.9316 10.3486 12.8263 10.6029 12.6387 10.7904C12.4512 10.978 12.1969 11.0833 11.9316 11.0833C11.6664 11.0833 11.4121 10.978 11.2245 10.7904C11.037 10.6029 10.9316 10.3486 10.9316 10.0833V8.08333C10.9316 6.58044 11.5287 5.1391 12.5914 4.0764C13.6541 3.01369 15.0954 2.41667 16.5983 2.41667C18.1012 2.41667 19.5425 3.01369 20.6052 4.0764C21.668 5.1391 22.265 6.58044 22.265 8.08333V10.0833Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26.3873 11.8833L27.4539 27.8833C27.4807 28.2931 27.4232 28.704 27.285 29.0907C27.1467 29.4774 26.9307 29.8316 26.6501 30.1315C26.3696 30.4314 26.0306 30.6705 25.654 30.8343C25.2774 30.998 24.8712 31.0828 24.4606 31.0833H8.73527C8.32451 31.0831 7.91817 30.9986 7.54139 30.8351C7.16461 30.6715 6.82542 30.4323 6.54482 30.1323C6.26422 29.8323 6.04818 29.478 5.91008 29.0911C5.77197 28.7043 5.71474 28.2932 5.74193 27.8833L6.8086 11.8833C6.85934 11.124 7.19676 10.4123 7.75254 9.89244C8.30832 9.37256 9.0409 9.08333 9.80193 9.08334H23.3939C24.155 9.08333 24.8876 9.37256 25.4433 9.89244C25.9991 10.4123 26.3365 11.124 26.3873 11.8833ZM19.9126 14.9873C19.6145 15.6139 19.1449 16.1432 18.5582 16.5138C17.9715 16.8844 17.2918 17.081 16.5979 17.081C15.904 17.081 15.2243 16.8844 14.6377 16.5138C14.051 16.1432 13.5814 15.6139 13.2833 14.9873C13.2269 14.8687 13.1477 14.7623 13.0502 14.6743C12.9527 14.5863 12.8389 14.5183 12.7151 14.4743C12.5914 14.4303 12.4601 14.4111 12.329 14.4178C12.1978 14.4245 12.0692 14.457 11.9506 14.5133C11.832 14.5697 11.7256 14.6489 11.6376 14.7464C11.5496 14.8439 11.4816 14.9578 11.4376 15.0815C11.3936 15.2053 11.3744 15.3365 11.3811 15.4676C11.3878 15.5988 11.4202 15.7274 11.4766 15.846C11.9358 16.8157 12.6609 17.635 13.5675 18.2088C14.4741 18.7826 15.525 19.0872 16.5979 19.0872C17.6709 19.0872 18.7217 18.7826 19.6283 18.2088C20.5349 17.635 21.26 16.8157 21.7193 15.846C21.7756 15.7274 21.8081 15.5988 21.8148 15.4676C21.8215 15.3365 21.8023 15.2053 21.7583 15.0815C21.7143 14.9578 21.6463 14.8439 21.5583 14.7464C21.4703 14.6489 21.3639 14.5697 21.2453 14.5133C21.1266 14.457 20.9981 14.4245 20.8669 14.4178C20.7357 14.4111 20.6045 14.4303 20.4808 14.4743C20.357 14.5183 20.2431 14.5863 20.1457 14.6743C20.0482 14.7623 19.969 14.8687 19.9126 14.9873Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="count-cart">1</span> Cart</a
+            >
+          </li>
+          <li class="nav-item hidden-pc">
+            <a class="nav-link" href="ar/frequently-asked-questions.html">العربية</a>
+          </li>
+        </ul>
+        </div>
+        <a class="btn btn-primary mobile-hidden language-change" href="ar/frequently-asked-questions.html"
+          ><img src="images/EgFlag.svg" alt="Egypt Flag" /></a
+        >
+        <a class="btn btn-primary mobile-hidden cart-icon" href="cart.html"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="33"
+          height="33"
+          viewBox="0 0 33 33"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M22.265 10.0833C22.265 10.3486 22.1596 10.6029 21.9721 10.7904C21.7845 10.978 21.5302 11.0833 21.265 11.0833C20.9998 11.0833 20.7454 10.978 20.5579 10.7904C20.3703 10.6029 20.265 10.3486 20.265 10.0833V8.08333C20.265 7.11087 19.8787 6.17824 19.191 5.49061C18.5034 4.80298 17.5708 4.41667 16.5983 4.41667C15.6258 4.41667 14.6932 4.80298 14.0056 5.49061C13.3179 6.17824 12.9316 7.11087 12.9316 8.08333V10.0833C12.9316 10.3486 12.8263 10.6029 12.6387 10.7904C12.4512 10.978 12.1969 11.0833 11.9316 11.0833C11.6664 11.0833 11.4121 10.978 11.2245 10.7904C11.037 10.6029 10.9316 10.3486 10.9316 10.0833V8.08333C10.9316 6.58044 11.5287 5.1391 12.5914 4.0764C13.6541 3.01369 15.0954 2.41667 16.5983 2.41667C18.1012 2.41667 19.5425 3.01369 20.6052 4.0764C21.668 5.1391 22.265 6.58044 22.265 8.08333V10.0833Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M26.3873 11.8833L27.4539 27.8833C27.4807 28.2931 27.4232 28.704 27.285 29.0907C27.1467 29.4774 26.9307 29.8316 26.6501 30.1315C26.3696 30.4314 26.0306 30.6705 25.654 30.8343C25.2774 30.998 24.8712 31.0828 24.4606 31.0833H8.73527C8.32451 31.0831 7.91817 30.9986 7.54139 30.8351C7.16461 30.6715 6.82542 30.4323 6.54482 30.1323C6.26422 29.8323 6.04818 29.478 5.91008 29.0911C5.77197 28.7043 5.71474 28.2932 5.74193 27.8833L6.8086 11.8833C6.85934 11.124 7.19676 10.4123 7.75254 9.89244C8.30832 9.37256 9.0409 9.08333 9.80193 9.08334H23.3939C24.155 9.08333 24.8876 9.37256 25.4433 9.89244C25.9991 10.4123 26.3365 11.124 26.3873 11.8833ZM19.9126 14.9873C19.6145 15.6139 19.1449 16.1432 18.5582 16.5138C17.9715 16.8844 17.2918 17.081 16.5979 17.081C15.904 17.081 15.2243 16.8844 14.6377 16.5138C14.051 16.1432 13.5814 15.6139 13.2833 14.9873C13.2269 14.8687 13.1477 14.7623 13.0502 14.6743C12.9527 14.5863 12.8389 14.5183 12.7151 14.4743C12.5914 14.4303 12.4601 14.4111 12.329 14.4178C12.1978 14.4245 12.0692 14.457 11.9506 14.5133C11.832 14.5697 11.7256 14.6489 11.6376 14.7464C11.5496 14.8439 11.4816 14.9578 11.4376 15.0815C11.3936 15.2053 11.3744 15.3365 11.3811 15.4676C11.3878 15.5988 11.4202 15.7274 11.4766 15.846C11.9358 16.8157 12.6609 17.635 13.5675 18.2088C14.4741 18.7826 15.525 19.0872 16.5979 19.0872C17.6709 19.0872 18.7217 18.7826 19.6283 18.2088C20.5349 17.635 21.26 16.8157 21.7193 15.846C21.7756 15.7274 21.8081 15.5988 21.8148 15.4676C21.8215 15.3365 21.8023 15.2053 21.7583 15.0815C21.7143 14.9578 21.6463 14.8439 21.5583 14.7464C21.4703 14.6489 21.3639 14.5697 21.2453 14.5133C21.1266 14.457 20.9981 14.4245 20.8669 14.4178C20.7357 14.4111 20.6045 14.4303 20.4808 14.4743C20.357 14.5183 20.2431 14.5863 20.1457 14.6743C20.0482 14.7623 19.969 14.8687 19.9126 14.9873Z"
+            fill="white"
+          />
+        </svg>
+        <span class="count-cart">1</span></a
+      >
+        <a class="btn btn-primary mobile-hidden" href="login.html"
+          >Log In / Register</a
+        >
+      </div>
+    </nav>
+    <div
+      class="bread-crumb"
+      style="
+        background-image: linear-gradient(
+            rgb(0 0 0 / 75%) 100%,
+            rgb(0 0 0 / 30%) 100%,
+            rgb(0 0 0 / 100%) 100%
+          ),
+          url(images/freq.png);
+      "
+    >
+      <div class="container h-100 d-flex align-items-center">
+        <div class="bread-crumb__text mt-5">
+          <div class="bread-crumb__title wow slideInLeft">frequently asked questions</div>
+          <div class="bread-crumb__desc wow slideInLeft" data-wow-delay="0.1s">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- frequently //////////////////////////////////////////////////// -->
+
+    <section class="fawazir section fp-auto-height-responsive frequently">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="section-head__title wow fadeInUp">
+            frequently asked questions
+          </h2>
+          <p class="section-head__desc wow fadeInUp" data-wow-delay="0.2s">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt labore dolore magna aliqua
+          </p>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Question 1
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pellentesque commodo lorem turpis in morbi magnis. Nam nisi, elementum mattis pellentesque sapien egestas nec. Ac viverra vitae fames arcu dignissim lacus erat eu ac. Sit posuere ac sit aliquet imperdiet accumsan convallis
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Question 1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pellentesque commodo lorem turpis in morbi magnis. Nam nisi, elementum mattis pellentesque sapien egestas nec. Ac viverra vitae fames arcu dignissim lacus erat eu ac. Sit posuere ac sit aliquet imperdiet accumsan convallis
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Question 1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pellentesque commodo lorem turpis in morbi magnis. Nam nisi, elementum mattis pellentesque sapien egestas nec. Ac viverra vitae fames arcu dignissim lacus erat eu ac. Sit posuere ac sit aliquet imperdiet accumsan convallis 
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- frequently //////////////////////////////////////////////////// -->
+        <!-- Partners Start -->
+        <section
+        class="clients section bg-light fp-auto-height-responsive"
+        id="partner"
+      >
+        <div class="section-head text-center">
+          <h2 class="section-head__title wow fadeInUp">our partners</h2>
+          <p class="section-head__desc wow fadeInUp" data-wow-delay="0.3s">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt labore dolore magna aliqua.
+          </p>
+        </div>
+        <div class="container">
+          <div class="swiper partner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/partner-logo.png" alt="Logo Name" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners End -->
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-6 wow fadeInUp">
+            <div class="info">
+              <div class="info__logo"><img src="images/logo-white.png" /></div>
+              <h3 class="info__title">About Mohamed Raslan</h3>
+              <p class="info__desc" style="font-size: 14px">
+                TQM PMP Trainer, Speaker, Technical Editor, and
+                Translator/Senior Project Engineer/Lecturer at Egyptian
+                Engineers Syndicate/Certified from Project Management Institute
+                (PMI)
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <h3 class="mb-4 footer__title">links</h3>
+            <div class="info__links">
+              <ul class="col info__list p-0">
+                <li class="list__item"><a href="#">About Us</a></li>
+                <li class="list__item"><a href="#">Courses</a></li>
+                <li class="list__item"><a href="#">Fawazir</a></li>
+                <li class="list__item"><a href="#">blog </a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <h3 class="mb-4 footer__title">Connect With Us</h3>
+            <div class="connect mt-4">
+              <p class="connect__item font-14">
+                <i class="fa fa-whatsapp"> </i
+                ><span class="ml-2">+20 1128 8619 77</span>
+              </p>
+              <p class="connect__item font-14">
+                <i class="fa fa-envelope"> </i
+                ><span class="ml-2">support@yallapmp.com</span>
+              </p>
+            </div>
+            <div class="social d-flex justify-content-between mt-4">
+              <div class="icon"><i class="fa fa-facebook"></i></div>
+              <div class="icon"><i class="fa fa-twitter"></i></div>
+              <div class="icon"><i class="fa fa-instagram"></i></div>
+              <div class="icon"><i class="fa fa-linkedin"></i></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-flex justify-content-between align-items-center copyright"
+        >
+          <p class="copyright__text">
+            Copyright © 2021 All rights reserved | This site is made with by
+            Code Plus.
+          </p>
+          <a class="copyright__text" href="#">Privacy & Policy </a>
+        </div>
+      </div>
+    </footer>
+    <div id="loader">
+      <div class="loader"></div>
+    </div>
+    <div class="whats-btn">
+      <a
+        class="btn btn-primary btn-whats"
+        href="https://api.whatsapp.com/send?phone=15551234567"
+      >
+        <i class="fa fa-whatsapp"></i><span>Whatsapp</span></a
+      >
+    </div>
+    <script>
+      function fade(element) {
+        var op = 1; // initial opacity
+        var timer = setInterval(function () {
+          if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = "none";
+          }
+          element.style.opacity = op;
+          element.style.filter = "alpha(opacity=" + op * 100 + ")";
+          op -= op * 0.1;
+        }, 50);
+      }
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+
+      function showPage() {
+        var element = document.getElementById("loader");
+        fade(element);
+        document.getElementById("loader-content").style.display = "block";
+      }
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+  </body>
+</html>

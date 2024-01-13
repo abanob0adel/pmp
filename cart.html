@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Yalla-PMP</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Styles-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body
+    onload="myFunction()"
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="200"
+  >
+    <nav
+      class="navbar navbar-expand-md fixed-top navbar-inverse login-nav"
+      id="navbar"
+      data-offset-top="-1"
+      data-spy="affix"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo-white" src="images/logo-white.png" /><img
+            class="logo"
+            src="images/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="free-resources.html">Free resources</a>
+            </li>
+            <li class="nav-item hidden-pc">
+              <a class="nav-link" href="login.html">Log In / Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blog</a>
+            </li>
+            <li class="nav-item hidden-pc">
+              <a class="nav-link cart-icon" href="cart.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.265 10.0833C22.265 10.3486 22.1596 10.6029 21.9721 10.7904C21.7845 10.978 21.5302 11.0833 21.265 11.0833C20.9998 11.0833 20.7454 10.978 20.5579 10.7904C20.3703 10.6029 20.265 10.3486 20.265 10.0833V8.08333C20.265 7.11087 19.8787 6.17824 19.191 5.49061C18.5034 4.80298 17.5708 4.41667 16.5983 4.41667C15.6258 4.41667 14.6932 4.80298 14.0056 5.49061C13.3179 6.17824 12.9316 7.11087 12.9316 8.08333V10.0833C12.9316 10.3486 12.8263 10.6029 12.6387 10.7904C12.4512 10.978 12.1969 11.0833 11.9316 11.0833C11.6664 11.0833 11.4121 10.978 11.2245 10.7904C11.037 10.6029 10.9316 10.3486 10.9316 10.0833V8.08333C10.9316 6.58044 11.5287 5.1391 12.5914 4.0764C13.6541 3.01369 15.0954 2.41667 16.5983 2.41667C18.1012 2.41667 19.5425 3.01369 20.6052 4.0764C21.668 5.1391 22.265 6.58044 22.265 8.08333V10.0833Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M26.3873 11.8833L27.4539 27.8833C27.4807 28.2931 27.4232 28.704 27.285 29.0907C27.1467 29.4774 26.9307 29.8316 26.6501 30.1315C26.3696 30.4314 26.0306 30.6705 25.654 30.8343C25.2774 30.998 24.8712 31.0828 24.4606 31.0833H8.73527C8.32451 31.0831 7.91817 30.9986 7.54139 30.8351C7.16461 30.6715 6.82542 30.4323 6.54482 30.1323C6.26422 29.8323 6.04818 29.478 5.91008 29.0911C5.77197 28.7043 5.71474 28.2932 5.74193 27.8833L6.8086 11.8833C6.85934 11.124 7.19676 10.4123 7.75254 9.89244C8.30832 9.37256 9.0409 9.08333 9.80193 9.08334H23.3939C24.155 9.08333 24.8876 9.37256 25.4433 9.89244C25.9991 10.4123 26.3365 11.124 26.3873 11.8833ZM19.9126 14.9873C19.6145 15.6139 19.1449 16.1432 18.5582 16.5138C17.9715 16.8844 17.2918 17.081 16.5979 17.081C15.904 17.081 15.2243 16.8844 14.6377 16.5138C14.051 16.1432 13.5814 15.6139 13.2833 14.9873C13.2269 14.8687 13.1477 14.7623 13.0502 14.6743C12.9527 14.5863 12.8389 14.5183 12.7151 14.4743C12.5914 14.4303 12.4601 14.4111 12.329 14.4178C12.1978 14.4245 12.0692 14.457 11.9506 14.5133C11.832 14.5697 11.7256 14.6489 11.6376 14.7464C11.5496 14.8439 11.4816 14.9578 11.4376 15.0815C11.3936 15.2053 11.3744 15.3365 11.3811 15.4676C11.3878 15.5988 11.4202 15.7274 11.4766 15.846C11.9358 16.8157 12.6609 17.635 13.5675 18.2088C14.4741 18.7826 15.525 19.0872 16.5979 19.0872C17.6709 19.0872 18.7217 18.7826 19.6283 18.2088C20.5349 17.635 21.26 16.8157 21.7193 15.846C21.7756 15.7274 21.8081 15.5988 21.8148 15.4676C21.8215 15.3365 21.8023 15.2053 21.7583 15.0815C21.7143 14.9578 21.6463 14.8439 21.5583 14.7464C21.4703 14.6489 21.3639 14.5697 21.2453 14.5133C21.1266 14.457 20.9981 14.4245 20.8669 14.4178C20.7357 14.4111 20.6045 14.4303 20.4808 14.4743C20.357 14.5183 20.2431 14.5863 20.1457 14.6743C20.0482 14.7623 19.969 14.8687 19.9126 14.9873Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="count-cart">1</span> Cart</a
+              >
+            </li>
+            <li class="nav-item hidden-pc">
+              <a class="nav-link" href="ar/cart.html">العربية</a>
+            </li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-primary mobile-hidden language-change"
+          href="ar/cart.html"
+          ><img src="images/EgFlag.svg" alt="Egypt Flag"
+        /></a>
+        <a class="btn btn-primary mobile-hidden cart-icon" href="cart.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22.265 10.0833C22.265 10.3486 22.1596 10.6029 21.9721 10.7904C21.7845 10.978 21.5302 11.0833 21.265 11.0833C20.9998 11.0833 20.7454 10.978 20.5579 10.7904C20.3703 10.6029 20.265 10.3486 20.265 10.0833V8.08333C20.265 7.11087 19.8787 6.17824 19.191 5.49061C18.5034 4.80298 17.5708 4.41667 16.5983 4.41667C15.6258 4.41667 14.6932 4.80298 14.0056 5.49061C13.3179 6.17824 12.9316 7.11087 12.9316 8.08333V10.0833C12.9316 10.3486 12.8263 10.6029 12.6387 10.7904C12.4512 10.978 12.1969 11.0833 11.9316 11.0833C11.6664 11.0833 11.4121 10.978 11.2245 10.7904C11.037 10.6029 10.9316 10.3486 10.9316 10.0833V8.08333C10.9316 6.58044 11.5287 5.1391 12.5914 4.0764C13.6541 3.01369 15.0954 2.41667 16.5983 2.41667C18.1012 2.41667 19.5425 3.01369 20.6052 4.0764C21.668 5.1391 22.265 6.58044 22.265 8.08333V10.0833Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M26.3873 11.8833L27.4539 27.8833C27.4807 28.2931 27.4232 28.704 27.285 29.0907C27.1467 29.4774 26.9307 29.8316 26.6501 30.1315C26.3696 30.4314 26.0306 30.6705 25.654 30.8343C25.2774 30.998 24.8712 31.0828 24.4606 31.0833H8.73527C8.32451 31.0831 7.91817 30.9986 7.54139 30.8351C7.16461 30.6715 6.82542 30.4323 6.54482 30.1323C6.26422 29.8323 6.04818 29.478 5.91008 29.0911C5.77197 28.7043 5.71474 28.2932 5.74193 27.8833L6.8086 11.8833C6.85934 11.124 7.19676 10.4123 7.75254 9.89244C8.30832 9.37256 9.0409 9.08333 9.80193 9.08334H23.3939C24.155 9.08333 24.8876 9.37256 25.4433 9.89244C25.9991 10.4123 26.3365 11.124 26.3873 11.8833ZM19.9126 14.9873C19.6145 15.6139 19.1449 16.1432 18.5582 16.5138C17.9715 16.8844 17.2918 17.081 16.5979 17.081C15.904 17.081 15.2243 16.8844 14.6377 16.5138C14.051 16.1432 13.5814 15.6139 13.2833 14.9873C13.2269 14.8687 13.1477 14.7623 13.0502 14.6743C12.9527 14.5863 12.8389 14.5183 12.7151 14.4743C12.5914 14.4303 12.4601 14.4111 12.329 14.4178C12.1978 14.4245 12.0692 14.457 11.9506 14.5133C11.832 14.5697 11.7256 14.6489 11.6376 14.7464C11.5496 14.8439 11.4816 14.9578 11.4376 15.0815C11.3936 15.2053 11.3744 15.3365 11.3811 15.4676C11.3878 15.5988 11.4202 15.7274 11.4766 15.846C11.9358 16.8157 12.6609 17.635 13.5675 18.2088C14.4741 18.7826 15.525 19.0872 16.5979 19.0872C17.6709 19.0872 18.7217 18.7826 19.6283 18.2088C20.5349 17.635 21.26 16.8157 21.7193 15.846C21.7756 15.7274 21.8081 15.5988 21.8148 15.4676C21.8215 15.3365 21.8023 15.2053 21.7583 15.0815C21.7143 14.9578 21.6463 14.8439 21.5583 14.7464C21.4703 14.6489 21.3639 14.5697 21.2453 14.5133C21.1266 14.457 20.9981 14.4245 20.8669 14.4178C20.7357 14.4111 20.6045 14.4303 20.4808 14.4743C20.357 14.5183 20.2431 14.5863 20.1457 14.6743C20.0482 14.7623 19.969 14.8687 19.9126 14.9873Z"
+              fill="white"
+            />
+          </svg>
+          <span class="count-cart">1</span></a
+        >
+        <a class="btn btn-primary mobile-hidden" href="login.html"
+          >Log In / Register</a
+        >
+      </div>
+    </nav>
+    <div class="section cart-page">
+      <div class="container">
+        <div class="welcome-text">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="cart-items">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Course Name</th>
+                      <th>Price</th>
+                      <th>Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="course-details">
+                        <div class="course-name">
+                          <img
+                            src="images/course-image.png"
+                            alt="Course Image"
+                          />
+                          <div>
+                            <h3>
+                              Design Thinking for Beginners: Develop Innovative
+                              Ideas
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Vulputate
+                              cursus molestie nulla suspendisse mi id. Eu
+                              pulvinar risus egestas eget.
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <span>$99.99</span>
+                      </td>
+                      <td>
+                        <button class="remove">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M12 24C5.38047 24 0 18.6195 0 12C0 5.38047 5.38047 0 12 0C18.6195 0 24 5.38047 24 12C24 18.6195 18.6195 24 12 24ZM12 1.67442C6.30698 1.67442 1.67442 6.30698 1.67442 12C1.67442 17.693 6.30698 22.3256 12 22.3256C17.693 22.3256 22.3256 17.693 22.3256 12C22.3256 6.30698 17.693 1.67442 12 1.67442Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M8.84223 15.9956C8.63014 15.9956 8.41805 15.9175 8.2506 15.75C7.92688 15.4263 7.92688 14.8905 8.2506 14.5668L14.5687 8.24865C14.8925 7.92493 15.4283 7.92493 15.752 8.24865C16.0757 8.57237 16.0757 9.10818 15.752 9.43191L9.43386 15.75C9.27758 15.9175 9.05432 15.9956 8.84223 15.9956Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M15.1604 15.9956C14.9483 15.9956 14.7362 15.9175 14.5687 15.75L8.2506 9.43191C7.92688 9.10818 7.92688 8.57237 8.2506 8.24865C8.57432 7.92493 9.11014 7.92493 9.43386 8.24865L15.752 14.5668C16.0757 14.8905 16.0757 15.4263 15.752 15.75C15.5846 15.9175 15.3725 15.9956 15.1604 15.9956Z"
+                              fill="#E42020"
+                            />
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="course-details">
+                        <div class="course-name">
+                          <img
+                            src="images/course-image.png"
+                            alt="Course Image"
+                          />
+                          <div>
+                            <h3>
+                              Design Thinking for Beginners: Develop Innovative
+                              Ideas
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Vulputate
+                              cursus molestie nulla suspendisse mi id. Eu
+                              pulvinar risus egestas eget.
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <span>$99.99</span>
+                      </td>
+                      <td>
+                        <button class="remove">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M12 24C5.38047 24 0 18.6195 0 12C0 5.38047 5.38047 0 12 0C18.6195 0 24 5.38047 24 12C24 18.6195 18.6195 24 12 24ZM12 1.67442C6.30698 1.67442 1.67442 6.30698 1.67442 12C1.67442 17.693 6.30698 22.3256 12 22.3256C17.693 22.3256 22.3256 17.693 22.3256 12C22.3256 6.30698 17.693 1.67442 12 1.67442Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M8.84223 15.9956C8.63014 15.9956 8.41805 15.9175 8.2506 15.75C7.92688 15.4263 7.92688 14.8905 8.2506 14.5668L14.5687 8.24865C14.8925 7.92493 15.4283 7.92493 15.752 8.24865C16.0757 8.57237 16.0757 9.10818 15.752 9.43191L9.43386 15.75C9.27758 15.9175 9.05432 15.9956 8.84223 15.9956Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M15.1604 15.9956C14.9483 15.9956 14.7362 15.9175 14.5687 15.75L8.2506 9.43191C7.92688 9.10818 7.92688 8.57237 8.2506 8.24865C8.57432 7.92493 9.11014 7.92493 9.43386 8.24865L15.752 14.5668C16.0757 14.8905 16.0757 15.4263 15.752 15.75C15.5846 15.9175 15.3725 15.9956 15.1604 15.9956Z"
+                              fill="#E42020"
+                            />
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="course-details">
+                        <div class="course-name">
+                          <img
+                            src="images/course-image.png"
+                            alt="Course Image"
+                          />
+                          <div>
+                            <h3>
+                              Design Thinking for Beginners: Develop Innovative
+                              Ideas
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Vulputate
+                              cursus molestie nulla suspendisse mi id. Eu
+                              pulvinar risus egestas eget.
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <span>$99.99</span>
+                      </td>
+                      <td>
+                        <button class="remove">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M12 24C5.38047 24 0 18.6195 0 12C0 5.38047 5.38047 0 12 0C18.6195 0 24 5.38047 24 12C24 18.6195 18.6195 24 12 24ZM12 1.67442C6.30698 1.67442 1.67442 6.30698 1.67442 12C1.67442 17.693 6.30698 22.3256 12 22.3256C17.693 22.3256 22.3256 17.693 22.3256 12C22.3256 6.30698 17.693 1.67442 12 1.67442Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M8.84223 15.9956C8.63014 15.9956 8.41805 15.9175 8.2506 15.75C7.92688 15.4263 7.92688 14.8905 8.2506 14.5668L14.5687 8.24865C14.8925 7.92493 15.4283 7.92493 15.752 8.24865C16.0757 8.57237 16.0757 9.10818 15.752 9.43191L9.43386 15.75C9.27758 15.9175 9.05432 15.9956 8.84223 15.9956Z"
+                              fill="#E42020"
+                            />
+                            <path
+                              d="M15.1604 15.9956C14.9483 15.9956 14.7362 15.9175 14.5687 15.75L8.2506 9.43191C7.92688 9.10818 7.92688 8.57237 8.2506 8.24865C8.57432 7.92493 9.11014 7.92493 9.43386 8.24865L15.752 14.5668C16.0757 14.8905 16.0757 15.4263 15.752 15.75C15.5846 15.9175 15.3725 15.9956 15.1604 15.9956Z"
+                              fill="#E42020"
+                            />
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="summary">
+                <h6>Summary</h6>
+                <div class="summary-box">
+                  <div class="row subtotal">
+                    <div class="col-md-6 title">SUBTOTAL</div>
+                    <div class="col-md-6 price">$51.38</div>
+                  </div>
+                  <div class="row subtotal">
+                    <div class="col-md-6 title">Coupon Discount</div>
+                    <div class="col-md-6 price">0%</div>
+                  </div>
+                  <div class="row subtotal">
+                    <div class="col-md-6 title">TAX</div>
+                    <div class="col-md-6 price">$5</div>
+                  </div>
+                  <div class="row subtotal total">
+                    <div class="col-md-6 title">Total</div>
+                    <div class="col-md-6 price">$56.5</div>
+                  </div>
+                </div>
+              </div>
+              <form class="copun-code">
+                <input
+                  type="text"
+                  placeholder="discount code"
+                  class="copun-input"
+                />
+                <input type="submit" value="Apply" class="apply" />
+              </form>
+              <a href="#" class="checkout-btn">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Course  -->
+    <section
+      class="suggest-courses section fp-auto-height-responsive"
+      id="courses"
+    >
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="section-head__title wow fadeInUp">
+            Top Courses offers and deals are listed here
+          </h2>
+          <p class="section-head__desc wow fadeInUp" data-wow-delay="0.3s">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt labore dolore magna aliqua.
+          </p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="course-card wow fadeInUp" data-wow-delay="0.3s">
+              <div class="course-card__img">
+                <img src="images/course.png" /><span class="label label--green"
+                  >Best Seller</span
+                >
+              </div>
+              <div class="course-card__body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="course-card__title">Economie</h3>
+                </div>
+                <p class="text-12 course-card__subtitle">The course includes</p>
+                <p class="course-card__desc">
+                  "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                  tempor incididunt ut labore et doloresit amet aliqua.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="price">
+                    <p class="price__label">price</p>
+                    <p class="price__number">€180.00</p>
+                  </div>
+                  <div class="course-card__button">
+                    <div class="btn btn-primary">Add To Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="course-card wow fadeInUp" data-wow-delay="0.6s">
+              <div class="course-card__img">
+                <img src="images/course.png" /><span class="label label--red"
+                  >Hot & new</span
+                >
+              </div>
+              <div class="course-card__body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="course-card__title">Economie</h3>
+                </div>
+                <p class="text-12 course-card__subtitle">The course includes</p>
+                <p class="course-card__desc">
+                  "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                  tempor incididunt ut labore et doloresit amet aliqua.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="price">
+                    <p class="price__label">price</p>
+                    <p class="price__number">€180.00</p>
+                  </div>
+                  <div class="course-card__button">
+                    <div class="btn btn-primary">Add To Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="course-card wow fadeInUp" data-wow-delay="0.9s">
+              <div class="course-card__img">
+                <img src="images/course.png" /><span class="label label--green"
+                  >Best Seller</span
+                >
+              </div>
+              <div class="course-card__body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="course-card__title">Economie</h3>
+                </div>
+                <p class="text-12 course-card__subtitle">The course includes</p>
+                <p class="course-card__desc">
+                  "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                  tempor incididunt ut labore et doloresit amet aliqua.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="price">
+                    <p class="price__label">price</p>
+                    <p class="price__number">€180.00</p>
+                  </div>
+                  <div class="course-card__button">
+                    <div class="btn btn-primary">Add To Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course End -->
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-6 wow fadeInUp">
+            <div class="info">
+              <div class="info__logo"><img src="images/logo-white.png" /></div>
+              <h3 class="info__title">About Mohamed Raslan</h3>
+              <p class="info__desc" style="font-size: 14px">
+                TQM PMP Trainer, Speaker, Technical Editor, and
+                Translator/Senior Project Engineer/Lecturer at Egyptian
+                Engineers Syndicate/Certified from Project Management Institute
+                (PMI)
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <h3 class="mb-4 footer__title">links</h3>
+            <div class="info__links">
+              <ul class="col info__list p-0">
+                <li class="list__item"><a href="#">About Us</a></li>
+                <li class="list__item"><a href="#">Courses</a></li>
+                <li class="list__item"><a href="#">Fawazir</a></li>
+                <li class="list__item"><a href="#">blog </a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 mt-5 mt-lg-0 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <h3 class="mb-4 footer__title">Connect With Us</h3>
+            <div class="connect mt-4">
+              <p class="connect__item font-14">
+                <i class="fa fa-whatsapp"> </i
+                ><span class="ml-2">+20 1128 8619 77</span>
+              </p>
+              <p class="connect__item font-14">
+                <i class="fa fa-envelope"> </i
+                ><span class="ml-2">support@yallapmp.com</span>
+              </p>
+            </div>
+            <div class="social d-flex justify-content-between mt-4">
+              <div class="icon"><i class="fa fa-facebook"></i></div>
+              <div class="icon"><i class="fa fa-twitter"></i></div>
+              <div class="icon"><i class="fa fa-instagram"></i></div>
+              <div class="icon"><i class="fa fa-linkedin"></i></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-flex justify-content-between align-items-center copyright"
+        >
+          <p class="copyright__text">
+            Copyright © 2021 All rights reserved | This site is made with by
+            Code Plus.
+          </p>
+          <a class="copyright__text" href="#">Privacy & Policy </a>
+        </div>
+      </div>
+    </footer>
+    <div id="loader">
+      <div class="loader"></div>
+    </div>
+    <div class="whats-btn">
+      <a
+        class="btn btn-primary btn-whats"
+        href="https://api.whatsapp.com/send?phone=15551234567"
+      >
+        <i class="fa fa-whatsapp"></i><span>Whatsapp</span></a
+      >
+    </div>
+    <script>
+      function fade(element) {
+        var op = 1; // initial opacity
+        var timer = setInterval(function () {
+          if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = "none";
+          }
+          element.style.opacity = op;
+          element.style.filter = "alpha(opacity=" + op * 100 + ")";
+          op -= op * 0.1;
+        }, 50);
+      }
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+
+      function showPage() {
+        var element = document.getElementById("loader");
+        fade(element);
+        document.getElementById("loader-content").style.display = "block";
+      }
+    </script>
+    <script src="js/core.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  </body>
+</html>
