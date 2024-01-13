@@ -10923,7 +10923,7 @@ html.fp-enabled,
   background: none !important;
   padding: 0 15px !important;
 }
-.gallery-page{
+.gallery-page {
   padding: 80px 0;
 }
 .gallery {
@@ -11986,6 +11986,14 @@ form.copun-code input.apply:hover {
 }
 form.copun-code {
   display: flex;
+}
+.copun-valid {
+  color: #018d29;
+  padding: 10px 0;
+}
+.copun-not-valid {
+  color: red;
+  margin: 10px 0;
 }
 @media (max-width: 992px) {
   .cart-items .course-name {
